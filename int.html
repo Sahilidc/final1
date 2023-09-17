@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Information Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="university">Name of University:</label>
+                <input type="text" id="university" name="university" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="BSc">BSc</option>
+                    <option value="BA">BA</option>
+                    <option value="B.Tech">B.Tech</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="specialization">Specialization:</label>
+                <select id="specialization" name="specialization" required onchange="la(this.value)">
+                    <option value="">Select Specialization</option>
+                    <option value="course.html">Computer Science</option>
+                    <option value="ece.html">Electrical Engineering</option>
+                    <option value="Mech.html">Mechanical Engineering</option>
+                </select>
+            </div>
+            
+        </form>
+    </div>
+</body>
+<script>
+
+function la(src)
+{
+    window.location=src;
+}
+</script>
+</html>

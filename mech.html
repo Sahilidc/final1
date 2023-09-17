@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Subjects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mechanical Engineering Subjects</h1>
+    </header>
+    <div class="container">
+        <form>
+            <label for="subjects">Select a subject:</label>
+            <select id="subjects" name="subjects" onchange="la(this.value)">
+                <option value="">Select</option>
+                <option value="sub1.html">Fluid mechanics</option>
+                <option value="subject2">Automobile Engineering</option>
+                <option value="subject3">Materials Science</option>
+                <option value="subject4">Strength of materials</option>
+                <option value="subject5">Solid mechanics</option>
+            </select>
+          
+        </form>
+    </div>
+</body>
+<script>
+
+    function la(src)
+    {
+        window.location=src;
+    }
+    </script>
+</html>
